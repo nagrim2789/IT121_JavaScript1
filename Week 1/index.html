@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <body>
+    <p id="paragraph">
+      My name is FIRSTNAME LASTNAME. I relocated back to Washington after leaving the Navy in 2021, and have been at Seattle Central College for YEARS and plan to GOALS after completing Winter and Spring quarters here at SCC.
+    </p>
+  </body> 
 
-<p id="paragraph"> My name is <FIRSTNAME> <LASTNAME>. I relocated back to Washington after leaving the Navy in 2021, and have been at Seattle Central College for <YEARS> and plan to <GOALS> after completing Winter and Spring quarters here at SCC.
-<p>
-<script src="script.js"></script>
-<script>
-const paragraph = document.getElementById("paragraph");
-paragraph.innerHTML = paragraph.innerHTML
-    .replace("<FIRSTNAME>", firstname)
-    .replace("<LASTNAME>", lastname)
-    .replace("<YEARS>", yearsofstudy)
-    .replace("<GOALS>", goal);
-</script>
-
-<body>
-<html>
+   <script>
+     let firstname = "Nick";
+     let lastname = "Grim";
+     let yearsofstudy = "one year";
+     let goal = "transfer to the School of Informatics at University of Washington";
+     
+     paragraph.innerHTML = paragraph.innerHTML
+       .replace("FIRSTNAME",firstname)
+       .replace("LASTNAME", lastname)
+       .replace("YEARS", yearsofstudy)
+       .replace("GOALS", goal)
+  </script>
+</html>
